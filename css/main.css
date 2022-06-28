@@ -1,0 +1,25 @@
+body{
+    background-color: #eee;
+}
+
+#parrafo{
+    max-width: 350px;
+    background-color: #f00;
+    margin: auto;
+    /* position relative indica la posición de un objeto, respecto a donde debería estar si tuviera static */
+    position: relative;
+    left: 15px;
+}
+
+#overflow{
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+img{
+    float: left;
+}
+img:hover{
+    opacity: 84%;
+}
