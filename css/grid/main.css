@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Sirve para indicar que el contenido se quede dentro de la caja cuando se indica un porcentaje a los anchos */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.grid{
+    display: grid;
+    /* grid-template-rows: 50px 100px; */
+    grid-template-rows: repeat(2, 50px);
+    /* grid-template-columns: 90px 50px 120px; */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* Min max establece un valor minimo y un máximo a una columna o fila */
+    /* grid-template-columns: minmax(auto, 50%) 1fr 3em; */
+    grid-template-columns: 30px repeat(3, 1fr) 15px;
+}
+
+.element {
+    background-color: red;
+}
