@@ -1,25 +1,56 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    /* Sirve para indicar que el contenido se quede dentro de la caja cuando se indica un porcentaje a los anchos */
+    box-sizing: border-box;
+}
+
+body {
     background-color: #eee;
 }
 
-#parrafo{
-    max-width: 350px;
-    background-color: #f00;
-    margin: auto;
-    /* position relative indica la posición de un objeto, respecto a donde debería estar si tuviera static */
-    position: relative;
-    left: 15px;
+.box1,
+.box2,
+.box3 {
+    background-color: white;
+    font-size: 10px;
+    height: 25px;
+    margin: 10px 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-#overflow{
-    width: 100px;
-    height: 100px;
-    overflow: scroll;
+p {
+    padding-top: 6px;
 }
 
-img{
-    float: left;
+.box1 {
+    border-left: 1px solid red;
+    transition: 2s;
 }
-img:hover{
-    opacity: 84%;
+
+.box1:hover {
+    transform: scale(1.09, 1.09);
+    cursor: cell;
+}
+
+.box2 {
+    border-left: 1px solid green;
+    transition: 0.5s;
+}
+
+.box2:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    cursor: help;
+}
+
+.box3 {
+    border-left: 1px solid blue;
+    transition: 1s;
+}
+
+.box3:hover {
+    background-color: rgba(0, 0, 255, 0.2);
+    cursor: pointer;
 }
