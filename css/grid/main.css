@@ -4,25 +4,25 @@
     /* Sirve para indicar que el contenido se quede dentro de la caja cuando se indica un porcentaje a los anchos */
     box-sizing: border-box;
 }
-
+html{
+    height: 100%;
+}
 body {
     background-color: #eee;
+    height: 100%;
 }
 
 .grid{
     display: grid;
-    grid-template-areas: "header header"
-    "content sidebar" 
-    "footer footer";
-    grid-template-rows: 150px 1fr 100px;
-    grid-template-columns: 1fr 200px;
-    grid-auto-rows: 140px;
-    grid-auto-flow: row;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 5px;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.red {
+.red{
     background-color: red;
-}
-.blue {
-    background-color: blue;
 }
