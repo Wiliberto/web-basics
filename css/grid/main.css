@@ -11,17 +11,18 @@ body {
 
 .grid{
     display: grid;
-    /* grid-template-rows: 50px 100px; */
-    grid-template-rows: repeat(2, 50px);
-    /* grid-template-columns: 90px 50px 120px; */
-    /* grid-template-columns: 1fr 2fr 3fr; */
-    /* Min max establece un valor minimo y un máximo a una columna o fila */
-    /* grid-template-columns: minmax(auto, 50%) 1fr 3em; */
-    grid-template-columns: 30px repeat(3, 1fr) 15px;
-    /* Gap marca la distancia entre filas y columnas para las grillas */
-    gap: 15px;
+    grid-template-areas: "header header"
+    "content sidebar" 
+    "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
 }
 
-.element {
+.red {
     background-color: red;
+}
+.blue {
+    background-color: blue;
 }
