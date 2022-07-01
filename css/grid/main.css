@@ -18,6 +18,8 @@ body {
     /* Min max establece un valor minimo y un máximo a una columna o fila */
     /* grid-template-columns: minmax(auto, 50%) 1fr 3em; */
     grid-template-columns: 30px repeat(3, 1fr) 15px;
+    /* Gap marca la distancia entre filas y columnas para las grillas */
+    gap: 15px;
 }
 
 .element {
